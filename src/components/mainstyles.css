@@ -1,0 +1,36 @@
+.mainpage {
+  background-color: dimgrey;
+}
+
+.imageslide {
+  margin-top: 20px;
+}
+.textCol {
+  margin-left: 70px;
+  margin-right: 70px;
+  font-size: 20px;
+  color: black;
+}
+.textCol p {
+  color: black;
+}
+.card h2 {
+  color: black;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 32px;
+}
+.imageCol {
+  margin-left: 10px;
+  margin-right: 100px;
+  padding-left: 220px;
+  padding-right: 100px;
+  margin-bottom: 40px;
+}
+.card {
+  margin-bottom: 50px;
+  border: 7px solid green;
+}
+.col-card {
+  background-color: tomato;
+}

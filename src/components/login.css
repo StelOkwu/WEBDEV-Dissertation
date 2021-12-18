@@ -1,0 +1,40 @@
+h1 {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  color: green;
+}
+.login {
+  background-color: rgb(216, 192, 146);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  width: 750px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  /* padding-bottom: 100px; */
+}
+@media screen and (min-width: 560px) {
+  .App {
+    background-color: gray;
+  }
+  .login input {
+    width: 500px;
+    height: 70px;
+    margin: 10px;
+    font-size: 26px;
+  }
+
+  .button1 {
+    color: blue;
+    --primary: #1888ff;
+  }
+
+  label {
+    font-size: 28px;
+  }
+}
