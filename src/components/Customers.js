@@ -1,11 +1,10 @@
 import React, {useState} from 'react';
 import '../components/customer.css';
 import Axios from 'axios';
-//import CustomerList from "../components/CustomerList";
 import Footer from '../components/Footer';
+import { Container } from 'react-bootstrap';
 
 function Customers() {
-
         const [name, setCustomerName] = useState("");
         const [address, setCustomerAddress] = useState("");
         const [email, setCustomerEmail] = useState("");
@@ -22,11 +21,7 @@ function Customers() {
                 address: address, 
                 email: email, 
                 phoneNo: phoneNo
-            //  })
-            //  .then(() => {
-            //     alert("customer Successfully Inserted...");
             });
-
             setCustomerList([
                 ...customerList,
                  {
@@ -37,11 +32,12 @@ function Customers() {
                  },
             ]);
         };
-
     return (
         <div className="customer-info">
-            <h1 style={{ marginTop:"40px" }}>Create New Customers</h1>
+            <h1 style={{ marginTop:"20px", color:"black" }}>Admin User Form for Creating new Customer</h1>
+           <Container fluid>
             <div className="form">
+                 <h1 style={{ marginTop:"40px" }}>Create Customer</h1>
                 <label>Name</label>
                 <input type="text" name="name" onChange={(e) => { setCustomerName(e.target.value)}}/>
                 <label>Address</label>
@@ -50,14 +46,12 @@ function Customers() {
                 <input type="text" name="email" onChange={(e) => { setCustomerEmail(e.target.value)}} />
                 <label>Phone Number</label>
                 <input type="text" name="phoneNo" onChange={(e) => { setCustomerPhoneNo(e.target.value)}} />
-                <button type="submit" onClick={createCustomer}>Create</button>
+                <button type="submit" className="button" onClick={createCustomer}>Create</button>
             </div>
-
-<div>
-    <Footer />
-</div>
+            </Container>
+        <div>
+                <Footer />
         </div>
-    )
-}
-
-export default Customers
+        </div>
+    )}
+export default Customers;

@@ -5,14 +5,19 @@
 @media screen and (max-width: 780px) {
   .footer {
     background-color: black;
-    height: 100px;
+    height: 120px;
   }
   .rowcol-Footer {
     width: 100%;
+    margin-bottom: 10px;
   }
   .col {
     font-size: 20px;
     margin-top: 10px;
     color: white;
+    margin-bottom: 40px;
+  }
+  .rowfoot {
+    margin-bottom: 10px;
   }
 }

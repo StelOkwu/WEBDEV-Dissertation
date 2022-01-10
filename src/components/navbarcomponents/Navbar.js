@@ -71,7 +71,7 @@ const onMouseLeave = () => {
                     <NavDropdown.Divider />
 
                          <NavDropdown.Item id="navdropItem">
-                        <Link to="/offices">Injuries</Link> 
+                        <Link to="/offices">Damages</Link> 
                         </NavDropdown.Item>
 
                         <NavDropdown.Divider />

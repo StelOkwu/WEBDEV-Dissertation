@@ -4,14 +4,15 @@ import {DataSlider} from './imageslider/DataSlider';
 import Footer from '../components/Footer';
 import { Container, Card , Row, Col} from 'react-bootstrap';
 import './mainstyles.css';
-
+import Image1 from '../components/images/one.png';
+import Image2 from '../components/images/lucy.png';
 
 const Mainpage = () => {
     return (
         <div className="mainpage">
-            <Container fluid>
+            <Container fluid="md">
            <div className="imageslide">
-            <ImageSlider slides={DataSlider}/> <br />
+            <ImageSlider slides={DataSlider}/> 
             </div>
             <div>
                 <Card className="card">
@@ -30,25 +31,20 @@ const Mainpage = () => {
                      <Row>
                     <Col className="imageCol">
                         <Card className="col-card">
-                            <img src={process.env.PUBLIC_URL + "./pics/one.png" } style={{width:"100%", height:"100%"}}/> 
-                            <h3 style={{ marginLeft:"30px", paddingLeft:"80px", color:"black"}}>Stanley Nnamani</h3>
+                            <img src={Image1} style={{width:"100%", height:"100%"}}/> 
+                            <h3 style={{ marginLeft:"30px", paddingLeft:"160px", color:"black"}}>Stanley Nnamani</h3>
                         </Card>
                     </Col>
-
-                      <Col className="imageCol">
-                            <Card className="col-card">
-                                <img src={process.env.PUBLIC_URL + "./pics/lucy.png" } style={{width:"100%", height:"100%"}}/>
-                                        <h3 style={{ marginLeft:"50px", paddingLeft:"90px", color:"black"}}>Lucy Nnamani</h3>
+                    <Col className="imageCol">   <Card className="col-card">
+                                <img src={Image2 } style={{width:"100%", height:"100%"}}/>
+                            <h3 style={{ marginLeft:"120px", paddingLeft:"90px", color:"black"}}>Amaka Nnamani</h3>
                             </Card>
-                    </Col>
-               </Row>
+                    </Col> 
+                  </Row>
                 </Card>
-
             </div>
             </Container>
         <Footer />
         </div>
-    )
-}
-
+    )}
 export default Mainpage;

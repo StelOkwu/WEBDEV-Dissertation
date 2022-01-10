@@ -59,14 +59,14 @@ const App = () => {
             <Route path="/companies" exact element={<Companies />} />
 
           {/* <Navigate to="/" /> */}
-          <Route path="/customer/:id" element={EditingCustomer} /> 
+          <Route path="/customer/edit" element={<EditingCustomer />} /> 
             <Route path="/caruoselimage" exact element={<CaruoselImage />} />
 
           </Routes>
         
         </Router>
       
-<CaruoselImage />
+
     </div>
  
     </>
